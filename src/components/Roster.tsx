@@ -32,7 +32,7 @@ const players = [
     realName: "",
     role: "Developer",
     image: "https://imgs.search.brave.com/7zuDCuE1XnxaBTT5hUdiWvja2wXdaCp7oec-z_9DDUc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hdmF0/YXJmaWxlcy5hbHBo/YWNvZGVycy5jb20v/MzAyL3RodW1iLTM1/MC0zMDI1ODYud2Vi/cA",
-    link: ""
+    link: "https://www.tiktok.com/@ilycammx"
   }
 ];
 
