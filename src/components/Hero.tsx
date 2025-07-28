@@ -9,9 +9,9 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl px-4">
         <div className="mb-8 animate-scale-in">
           <img 
-            src="/lovable-uploads/5d0d7753-8c0c-4492-9ac5-a539dae441ee.png" 
+            src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
             alt="Nexus One" 
-            className="h-32 w-32 mx-auto mb-6 animate-float [filter:drop-shadow(0_0_0_transparent)]"
+            className="h-32 w-32 mx-auto mb-6"
             style={{ background: 'transparent' }}
           />
         </div>

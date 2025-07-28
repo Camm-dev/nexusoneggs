@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import player1 from "@/assets/player1.jpg";
 import player2 from "@/assets/player2.jpg";
 import player3 from "@/assets/player3.jpg";
@@ -41,6 +42,8 @@ const players = [
 ];
 
 const Roster = () => {
+  const scrollRef = useScrollAnimation();
+
   return (
     <section id="roster" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-4">
@@ -53,9 +56,9 @@ const Roster = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div ref={scrollRef} className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto opacity-0 translate-y-8 transition-all duration-700">
           {players.map((player, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:shadow-glow transition-all duration-500 group animate-scale-in hover:scale-105" style={{animationDelay: `${index * 0.2}s`}}>
+            <Card key={index} className="bg-gradient-card border-border hover:shadow-glow transition-all duration-500 group hover:scale-105">
               <CardContent className="p-6 text-center">
                 <div className="relative mb-6">
                   <img 
