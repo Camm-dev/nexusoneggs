@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
         
         <a href="https://discord.gg/S3wjMaJa8c" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-105 animate-fade-in">
+          <Button variant="outline" className="bg-black border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2 font-bold transition-all duration-300 hover:scale-105 animate-fade-in">
             Join Us
           </Button>
         </a>

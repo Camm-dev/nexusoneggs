@@ -10,7 +10,7 @@ const players = [
     name: "Reaper",
     realName: "",
     role: "Owner",
-    image: player1,
+    image: "/lovable-uploads/9a5cbde3-2bda-4024-8ca9-56fc9c94c09d.png",
     link: "https://www.tiktok.com/@nexus.1.reaper"
   },
   {
