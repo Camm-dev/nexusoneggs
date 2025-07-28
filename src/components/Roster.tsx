@@ -45,17 +45,17 @@ const Roster = () => {
     <section id="roster" className="py-20 bg-gradient-hero">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent animate-slide-up">
             Our Roster
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Meet the elite players who represent Nexus One in competitive Fortnite
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.2s'}}>
+            Meet the elite players who represent Nexus One
           </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {players.map((player, index) => (
-            <Card key={index} className="bg-gradient-card border-border hover:shadow-glow transition-all duration-300 group">
+            <Card key={index} className="bg-gradient-card border-border hover:shadow-glow transition-all duration-500 group animate-scale-in hover:scale-105" style={{animationDelay: `${index * 0.2}s`}}>
               <CardContent className="p-6 text-center">
                 <div className="relative mb-6">
                   <img 
