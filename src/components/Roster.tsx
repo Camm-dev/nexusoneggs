@@ -7,9 +7,9 @@ import player3 from "@/assets/player3.jpg";
 
 const players = [
   {
-    name: "NexusAce",
-    realName: "Alex Johnson",
-    role: "IGL/Fragger",
+    name: "Reaper",
+    realName: "",
+    role: "Owner",
     image: player1,
     stats: {
       wins: 45,
@@ -76,9 +76,11 @@ const Roster = () => {
                 <h3 className="text-2xl font-bold text-primary mb-2">
                   {player.name}
                 </h3>
-                <p className="text-muted-foreground mb-6">
-                  {player.realName}
-                </p>
+                {player.realName && (
+                  <p className="text-muted-foreground mb-6">
+                    {player.realName}
+                  </p>
+                )}
                 
                 <div className="space-y-3">
                   <div className="flex justify-between">
