@@ -4,13 +4,6 @@ import heroImage from "@/assets/hero-bg.jpg";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Flowing liquid background */}
-      <div className="absolute inset-0 opacity-50">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-flow rounded-full blur-3xl animate-flow"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-flow rounded-full blur-3xl animate-flow-reverse"></div>
-        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-gradient-flow rounded-full blur-3xl animate-flow" style={{animationDelay: '10s'}}></div>
-      </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-secondary/40" />
       
       <div className="relative z-10 text-center max-w-4xl px-4">
         <div className="mb-8 animate-scale-in">
@@ -37,8 +30,16 @@ const Hero = () => {
             </Button>
           </a>
           <a href="https://www.tiktok.com/@nexus.one.esports?lang=en" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
+            <Button size="lg" variant="outline" className="bg-black border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
               Watch Highlights
+            </Button>
+          </a>
+        </div>
+        
+        <div className="mt-6 animate-fade-in" style={{animationDelay: '0.6s'}}>
+          <a href="https://discord.gg/S3wjMaJa8c" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" variant="outline" className="bg-black border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300 hover:scale-105">
+              Join Us
             </Button>
           </a>
         </div>

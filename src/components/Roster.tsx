@@ -58,7 +58,7 @@ const Roster = () => {
             
             return (
               <CardWrapper key={index} {...cardProps}>
-                <Card className="bg-black border-white border-[1px] shadow-lg transition-all duration-500 group hover:scale-105">
+                <Card className="bg-black border-primary border-[1px] shadow-lg transition-all duration-500 group hover:scale-105">
                   <CardContent className="p-6 text-center">
                     <div className="relative mb-6">
                       <img 
