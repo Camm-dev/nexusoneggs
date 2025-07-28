@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-border">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex items-center space-x-2 animate-fade-in">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-center relative">
+        <div className="flex items-center space-x-2 animate-fade-in absolute left-4">
           <img 
             src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
             alt="Nexus One Logo" 
@@ -25,11 +25,13 @@ const Navbar = () => {
           </a>
         </div>
         
-        <a href="https://discord.gg/S3wjMaJa8c" target="_blank" rel="noopener noreferrer">
-          <Button variant="outline" className="bg-black border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2 font-bold transition-all duration-300 hover:scale-105 animate-fade-in">
-            Join Us
-          </Button>
-        </a>
+        <div className="absolute right-4">
+          <a href="https://discord.gg/S3wjMaJa8c" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" className="bg-black border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-2 font-bold transition-all duration-300 hover:scale-105 animate-fade-in">
+              Join Us
+            </Button>
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -16,16 +16,23 @@ const players = [
   {
     name: "Cloave",
     realName: "",
-    role: "Co-Owner",
+    role: "Founder",
     image: "/lovable-uploads/e815197f-c73e-43ab-a2f2-0251e04d8c8e.png",
     link: "https://www.tiktok.com/@ho11and"
   },
   {
     name: "Spacie",
     realName: "",
-    role: "Comp Player",
+    role: "Founder",
     image: "/lovable-uploads/d119c7d0-39c3-479a-aee4-e217c94ca56d.png",
     link: "https://www.tiktok.com/@za.spacie?"
+  },
+  {
+    name: "Camm",
+    realName: "",
+    role: "Developer",
+    image: "https://imgs.search.brave.com/7zuDCuE1XnxaBTT5hUdiWvja2wXdaCp7oec-z_9DDUc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hdmF0/YXJmaWxlcy5hbHBo/YWNvZGVycy5jb20v/MzAyL3RodW1iLTM1/MC0zMDI1ODYud2Vi/cA",
+    link: ""
   }
 ];
 
@@ -44,7 +51,7 @@ const Roster = () => {
           </p>
         </div>
         
-        <div ref={scrollRef} className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto opacity-0 translate-y-8 transition-all duration-700">
+        <div ref={scrollRef} className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto opacity-0 translate-y-8 transition-all duration-700">
           {players.map((player, index) => {
             const CardWrapper = player.link ? 'a' : 'div';
             const cardProps = player.link 
