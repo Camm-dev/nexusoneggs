@@ -72,6 +72,7 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
+				'gradient-flow': 'var(--gradient-flow)',
 			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
@@ -108,6 +109,20 @@ export default {
 				'float': {
 					"0%, 100%": { transform: "translateY(0px)" },
 					"50%": { transform: "translateY(-10px)" }
+				},
+				'flow': {
+					"0%": { transform: "translateX(-100%) translateY(0%) rotate(0deg)" },
+					"25%": { transform: "translateX(0%) translateY(-50%) rotate(90deg)" },
+					"50%": { transform: "translateX(100%) translateY(0%) rotate(180deg)" },
+					"75%": { transform: "translateX(0%) translateY(50%) rotate(270deg)" },
+					"100%": { transform: "translateX(-100%) translateY(0%) rotate(360deg)" }
+				},
+				'flow-reverse': {
+					"0%": { transform: "translateX(100%) translateY(0%) rotate(0deg)" },
+					"25%": { transform: "translateX(0%) translateY(50%) rotate(-90deg)" },
+					"50%": { transform: "translateX(-100%) translateY(0%) rotate(-180deg)" },
+					"75%": { transform: "translateX(0%) translateY(-50%) rotate(-270deg)" },
+					"100%": { transform: "translateX(100%) translateY(0%) rotate(-360deg)" }
 				}
 			},
 			animation: {
@@ -117,7 +132,9 @@ export default {
 				'fade-out': 'fade-out 0.3s ease-out',
 				'scale-in': 'scale-in 0.2s ease-out',
 				'slide-up': 'slide-up 0.4s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'flow': 'flow 20s linear infinite',
+				'flow-reverse': 'flow-reverse 25s linear infinite'
 			}
 		}
 	},

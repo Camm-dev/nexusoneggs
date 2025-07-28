@@ -4,14 +4,20 @@ import heroImage from "@/assets/hero-bg.jpg";
 const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
-      <div className="absolute inset-0 bg-gradient-to-b from-background to-secondary/20" />
+      {/* Flowing liquid background */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-flow rounded-full blur-3xl animate-flow"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-flow rounded-full blur-3xl animate-flow-reverse"></div>
+        <div className="absolute top-1/2 left-1/2 w-72 h-72 bg-gradient-flow rounded-full blur-3xl animate-flow" style={{animationDelay: '10s'}}></div>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background/80 to-secondary/40" />
       
       <div className="relative z-10 text-center max-w-4xl px-4">
         <div className="mb-8 animate-scale-in">
           <img 
             src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
             alt="Nexus One" 
-            className="h-32 w-32 mx-auto mb-6"
+            className="h-48 w-48 mx-auto mb-8"
             style={{ background: 'transparent' }}
           />
         </div>
