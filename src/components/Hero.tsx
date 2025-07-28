@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       
-      <div className="relative z-10 text-center max-w-4xl px-4">
-        <h1 className="text-6xl md:text-8xl font-bold mb-8 bg-gradient-primary bg-clip-text text-transparent animate-slide-up">
+      <div className="relative z-10 text-center max-w-4xl px-4 pt-20">
+        <h1 className="text-6xl md:text-8xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent animate-slide-up">
           NEXUS ONE
         </h1>
         
@@ -14,7 +14,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
             alt="Nexus One" 
-            className="h-[576px] w-[576px] mx-auto mb-8"
+            className="h-[400px] w-[400px] mx-auto"
             style={{ background: 'transparent' }}
           />
         </div>
