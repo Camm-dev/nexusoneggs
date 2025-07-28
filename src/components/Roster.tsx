@@ -10,34 +10,19 @@ const players = [
     name: "Reaper",
     realName: "",
     role: "Owner",
-    image: player1,
-    stats: {
-      wins: 45,
-      kd: "2.8",
-      earnings: "$85K"
-    }
+    image: player1
   },
   {
-    name: "ShadowStrike",
-    realName: "Marcus Chen",
-    role: "Support/Builder",
-    image: player2,
-    stats: {
-      wins: 38,
-      kd: "2.3",
-      earnings: "$72K"
-    }
+    name: "Cloave",
+    realName: "",
+    role: "Co-Owner",
+    image: "/lovable-uploads/e815197f-c73e-43ab-a2f2-0251e04d8c8e.png"
   },
   {
-    name: "VortexSnipe",
-    realName: "Emma Rodriguez",
-    role: "Sniper/Scout",
-    image: player3,
-    stats: {
-      wins: 42,
-      kd: "3.1",
-      earnings: "$79K"
-    }
+    name: "Spacie",
+    realName: "",
+    role: "Comp Player",
+    image: "/lovable-uploads/d119c7d0-39c3-479a-aee4-e217c94ca56d.png"
   }
 ];
 
@@ -81,21 +66,6 @@ const Roster = () => {
                     {player.realName}
                   </p>
                 )}
-                
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Tournament Wins:</span>
-                    <span className="font-semibold text-primary">{player.stats.wins}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">K/D Ratio:</span>
-                    <span className="font-semibold text-primary">{player.stats.kd}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Earnings:</span>
-                    <span className="font-semibold text-primary">{player.stats.earnings}</span>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           ))}
