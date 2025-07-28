@@ -3,7 +3,7 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Flowing liquid background */}
       <div className="absolute inset-0 opacity-50">
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-flow rounded-full blur-3xl animate-flow"></div>
@@ -17,7 +17,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
             alt="Nexus One" 
-            className="h-96 w-96 mx-auto mb-8"
+            className="h-[576px] w-[576px] mx-auto mb-8"
             style={{ background: 'transparent' }}
           />
         </div>

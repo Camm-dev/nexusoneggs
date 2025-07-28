@@ -11,7 +11,7 @@ const players = [
     realName: "",
     role: "Owner",
     image: player1,
-    link: null
+    link: "https://www.tiktok.com/@nexus.1.reaper"
   },
   {
     name: "Cloave",
@@ -58,7 +58,7 @@ const Roster = () => {
             
             return (
               <CardWrapper key={index} {...cardProps}>
-                <Card className="bg-gradient-card border-border hover:shadow-glow transition-all duration-500 group hover:scale-105">
+                <Card className="bg-black border-white border-[1px] shadow-lg transition-all duration-500 group hover:scale-105">
                   <CardContent className="p-6 text-center">
                     <div className="relative mb-6">
                       <img 
