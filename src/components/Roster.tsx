@@ -1,0 +1,103 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import player1 from "@/assets/player1.jpg";
+import player2 from "@/assets/player2.jpg";
+import player3 from "@/assets/player3.jpg";
+
+const players = [
+  {
+    name: "NexusAce",
+    realName: "Alex Johnson",
+    role: "IGL/Fragger",
+    image: player1,
+    stats: {
+      wins: 45,
+      kd: "2.8",
+      earnings: "$85K"
+    }
+  },
+  {
+    name: "ShadowStrike",
+    realName: "Marcus Chen",
+    role: "Support/Builder",
+    image: player2,
+    stats: {
+      wins: 38,
+      kd: "2.3",
+      earnings: "$72K"
+    }
+  },
+  {
+    name: "VortexSnipe",
+    realName: "Emma Rodriguez",
+    role: "Sniper/Scout",
+    image: player3,
+    stats: {
+      wins: 42,
+      kd: "3.1",
+      earnings: "$79K"
+    }
+  }
+];
+
+const Roster = () => {
+  return (
+    <section id="roster" className="py-20 bg-gradient-hero">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+            Our Roster
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Meet the elite players who represent Nexus One in competitive Fortnite
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          {players.map((player, index) => (
+            <Card key={index} className="bg-gradient-card border-border hover:shadow-glow transition-all duration-300 group">
+              <CardContent className="p-6 text-center">
+                <div className="relative mb-6">
+                  <img 
+                    src={player.image} 
+                    alt={player.name}
+                    className="w-24 h-24 mx-auto rounded-full border-4 border-primary group-hover:border-accent transition-colors"
+                  />
+                  <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                    <Badge variant="secondary" className="bg-primary text-primary-foreground">
+                      {player.role}
+                    </Badge>
+                  </div>
+                </div>
+                
+                <h3 className="text-2xl font-bold text-primary mb-2">
+                  {player.name}
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  {player.realName}
+                </p>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Tournament Wins:</span>
+                    <span className="font-semibold text-primary">{player.stats.wins}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">K/D Ratio:</span>
+                    <span className="font-semibold text-primary">{player.stats.kd}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Earnings:</span>
+                    <span className="font-semibold text-primary">{player.stats.earnings}</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Roster;
