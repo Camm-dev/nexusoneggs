@@ -3,19 +3,16 @@ import heroImage from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+      <div className="absolute inset-0 bg-gradient-to-b from-background to-secondary/20" />
       
       <div className="relative z-10 text-center max-w-4xl px-4">
         <div className="mb-8 animate-scale-in">
           <img 
             src="/lovable-uploads/5d0d7753-8c0c-4492-9ac5-a539dae441ee.png" 
             alt="Nexus One" 
-            className="h-32 w-32 mx-auto mb-6 animate-float"
+            className="h-32 w-32 mx-auto mb-6 animate-float [filter:drop-shadow(0_0_0_transparent)]"
+            style={{ background: 'transparent' }}
           />
         </div>
         

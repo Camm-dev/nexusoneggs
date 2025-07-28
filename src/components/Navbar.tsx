@@ -8,7 +8,8 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/5d0d7753-8c0c-4492-9ac5-a539dae441ee.png" 
             alt="Nexus One Logo" 
-            className="h-8 w-8 animate-float"
+            className="h-8 w-8 animate-float [filter:drop-shadow(0_0_0_transparent)]"
+            style={{ background: 'transparent' }}
           />
           <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
             NEXUS ONE
