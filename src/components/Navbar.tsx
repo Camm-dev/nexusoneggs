@@ -7,9 +7,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-center relative">
         <div className="flex items-center space-x-2 animate-fade-in absolute left-4">
           <img 
-            src="/lovable-uploads/9e7cf861-bcc6-4367-84d0-b0c5f37c9a42.png" 
-            alt="Nexus One Jersey" 
-            className="h-8 w-8 object-contain"
+            src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
+            alt="Nexus One Logo" 
+            className="h-8 w-8"
             style={{ background: 'transparent' }}
           />
           <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">

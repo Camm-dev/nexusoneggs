@@ -8,7 +8,7 @@ const products = [
     id: 1,
     name: "Nexus One Esports Jersey",
     price: "$59.99",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=400&fit=crop&crop=center&auto=format&q=80",
+    image: "/lovable-uploads/9e7cf861-bcc6-4367-84d0-b0c5f37c9a42.png",
     category: "Apparel"
   },
   {
