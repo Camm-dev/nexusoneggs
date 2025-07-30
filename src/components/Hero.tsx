@@ -12,9 +12,9 @@ const Hero = () => {
         
         <div className="mb-8 animate-scale-in">
           <img 
-            src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
-            alt="Nexus One" 
-            className="h-[400px] w-[400px] mx-auto"
+            src="/lovable-uploads/9e7cf861-bcc6-4367-84d0-b0c5f37c9a42.png" 
+            alt="Nexus One Jersey" 
+            className="h-[400px] w-[400px] mx-auto object-contain"
             style={{ background: 'transparent' }}
           />
         </div>
@@ -24,7 +24,7 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{animationDelay: '0.4s'}}>
-          <a href="#roster">
+          <a href="/roster">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-12 py-6 text-xl font-bold transition-all duration-300 hover:scale-105 hover:shadow-glow border-2 border-primary">
               View Roster
             </Button>

@@ -7,9 +7,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-center relative">
         <div className="flex items-center space-x-2 animate-fade-in absolute left-4">
           <img 
-            src="/lovable-uploads/249f2c20-f50c-402a-b275-55161aa91266.png" 
-            alt="Nexus One Logo" 
-            className="h-8 w-8"
+            src="/lovable-uploads/9e7cf861-bcc6-4367-84d0-b0c5f37c9a42.png" 
+            alt="Nexus One Jersey" 
+            className="h-8 w-8 object-contain"
             style={{ background: 'transparent' }}
           />
           <span className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
@@ -21,9 +21,9 @@ const Navbar = () => {
           <Link to="/" className="text-primary font-bold hover:text-primary/80 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
             Home
           </Link>
-          <a href="#roster" className="text-primary font-bold hover:text-primary/80 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+          <Link to="/roster" className="text-primary font-bold hover:text-primary/80 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
             Roster
-          </a>
+          </Link>
           <Link to="/about" className="text-primary font-bold hover:text-primary/80 transition-all duration-300 hover:scale-105 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-primary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
             About
           </Link>
