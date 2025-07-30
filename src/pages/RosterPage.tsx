@@ -5,57 +5,75 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const players = [
   {
+    name: "Reaper",
+    role: "Owner",
+    image: "/lovable-uploads/9a5cbde3-2bda-4024-8ca9-56fc9c94c09d.png",
+    link: "https://www.tiktok.com/@nexus.1.reaper"
+  },
+  {
+    name: "Cloave",
+    role: "Founder",
+    image: "/lovable-uploads/e815197f-c73e-43ab-a2f2-0251e04d8c8e.png",
+    link: "https://www.tiktok.com/@ho11and"
+  },
+  {
+    name: "Spacie",
+    role: "Founder",
+    image: "/lovable-uploads/d119c7d0-39c3-479a-aee4-e217c94ca56d.png",
+    link: "https://www.tiktok.com/@za.spacie?"
+  },
+  {
+    name: "Camm",
+    role: "Developer",
+    image: "https://imgs.search.brave.com/7zuDCuE1XnxaBTT5hUdiWvja2wXdaCp7oec-z_9DDUc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hdmF0/YXJmaWxlcy5hbHBo/YWNvZGVycy5jb20v/MzAyL3RodW1iLTM1/MC0zMDI1ODYud2Vi/cA",
+    link: "https://www.tiktok.com/@ilycammx"
+  },
+  {
     name: "Vortex",
     role: "Content",
     image: "/lovable-uploads/031de604-901e-42a7-b8bd-7ae97e604340.png",
     link: ""
   },
   {
-    name: "Velo",
+    name: "Razer",
     role: "Content",
     image: "/lovable-uploads/979c201e-47e9-4b86-a368-ad2c7046ae66.png",
     link: ""
   },
   {
-    name: "Razer",
+    name: "Jaxy",
     role: "Content",
     image: "/lovable-uploads/096b124d-98e0-411d-b852-d3811fb237cb.png",
     link: ""
   },
   {
-    name: "Jaxy",
-    role: "Content",
-    image: "/lovable-uploads/6e81e7bf-0bd5-463f-bfee-b850321b74a4.png",
-    link: ""
-  },
-  {
     name: "Servix",
     role: "Comp",
-    image: "/lovable-uploads/a0565c91-4fae-4e7b-ab58-b1f3c0cfbb84.png",
+    image: "/lovable-uploads/6e81e7bf-0bd5-463f-bfee-b850321b74a4.png",
     link: ""
   },
   {
     name: "Eddie",
     role: "Comp",
-    image: "/lovable-uploads/e3ff9613-a269-45d8-99c5-159486f473f3.png",
+    image: "/lovable-uploads/a0565c91-4fae-4e7b-ab58-b1f3c0cfbb84.png",
     link: ""
   },
   {
     name: "Rex",
     role: "Comp",
-    image: "/lovable-uploads/4c93458b-3857-4514-92f1-ef4207792299.png",
+    image: "/lovable-uploads/e3ff9613-a269-45d8-99c5-159486f473f3.png",
     link: ""
   },
   {
     name: "Zen",
     role: "Comp",
-    image: "/lovable-uploads/1f785129-cd35-43a2-a5f3-7e01a1463d76.png",
+    image: "/lovable-uploads/4c93458b-3857-4514-92f1-ef4207792299.png",
     link: ""
   },
   {
     name: "Bxck",
     role: "Editor",
-    image: "/lovable-uploads/aba469e0-ca55-493c-a9f0-9232bc388f0b.png",
+    image: "/lovable-uploads/1f785129-cd35-43a2-a5f3-7e01a1463d76.png",
     link: ""
   },
   {
